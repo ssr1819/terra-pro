@@ -2,7 +2,7 @@ provider "aws" {
   region = "ap-south-1"  
 }
 
-resource "aws_instance" "terraform" {
+resource "aws_instance" "terraformpro" {
   ami           = "ami-0c55b159cbfafe1f0"  
   instance_type = "t2.micro"  
 
@@ -20,5 +20,5 @@ user_data = <<-EOF
               firewall-cmd --reload
               EOF
   tags = {
-    Name = "terraform" 
+    Name = "terraformpro" 
   }
